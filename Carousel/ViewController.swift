@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     
     var strArr:[String] = ["asd", "asd", "asdds", "sd", "sd", "asdf", "asdf", "sad"]
+    var color:[UIColor] = [.blue, .brown, .cyan, .darkGray, .green, .red, .purple, .magenta]
     
 
     override func viewDidLoad() {
@@ -41,6 +42,7 @@ extension ViewController:CarouseCollectionViewDelegate{
     
     func carouselView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = carouselView?.collectionView.dequeueReusableCell(withReuseIdentifier: "CaroucelCollectionCell", for: indexPath) as! CaroucelCollectionCell
+        cell.contentView.backgroundColor = color[indexPath.row]
         cell.textLabel.text = strArr[indexPath.row]
         return cell
     }
