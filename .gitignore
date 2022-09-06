@@ -1,0 +1,171 @@
+# Xcode
+
+#
+
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+
+
+
+## Build generated
+
+# build/
+
+CMS/Build/
+CMS/Index/
+DBBL-KonaPay/Build/
+DBBL-KonaPay/Index/
+DBBL-Merchant-app/Build/
+KonaPaySDK/Build/
+DBBLKonaPaySDK/Build/
+KonaPaySDK/Index/
+Kona_Pre_Pay_Framework/Build/
+Kona_Pre_Pay_Framework/Index/
+KSLLog/Build/
+KSLLog/Index/
+LocalDatabaseEncrypted/Build/
+LocalDatabaseEncrypted/Index/
+Map_SDK_Framework/Build/
+Map_SDK_Framework/Index/
+EmvMerchantBasedQrCodeProcessor/Build/
+EmvMerchantBasedQrCodeProcessor/Index/
+KonaPayCore/Build/
+KonaPayCore/Index/
+Nagad-iOS/Build/
+Nagad-iOS/Index/
+
+DerivedData/
+
+
+
+
+*/Podfile.lock
+*/Pods/
+*/Pods
+
+
+
+## Various settings
+
+*.pbxuser
+
+!default.pbxuser
+
+*.mode1v3
+
+!default.mode1v3
+
+*.mode2v3
+
+!default.mode2v3
+
+*.perspectivev3
+
+!default.perspectivev3
+
+xcuserdata/
+
+## DS_Store
+.DS_Store
+*/.DS_Store
+
+
+## Other
+
+*.moved-aside
+
+*.xcuserstate
+
+
+
+
+## Obj-C/Swift specific
+
+*.hmap
+
+*.ipa
+
+##*.dSYM.zip
+
+##*.dSYM
+
+
+
+
+## Playgrounds
+
+timeline.xctimeline
+
+playground.xcworkspace
+
+
+
+
+# Swift Package Manager
+
+#
+
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+
+# Packages/
+
+# .build/
+
+
+# CocoaPods
+
+#
+
+# We recommend against adding the Pods directory to your .gitignore. However
+
+# you should judge for yourself, the pros and cons are mentioned at:
+
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+
+#
+
+Pods/
+*/Pods/
+
+
+
+# Carthage
+
+*/Carthage/Checkouts/
+
+#
+
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+
+DBBLKonaPay/Carthage/Checkouts
+DBBLKonaPaySDK/Carthage/Checkouts
+Map_SDK_Framework/Carthage/Checkouts
+
+# DBBLKonaPay/Carthage/Build
+# DBBLKonaPaySDK/Carthage/Build
+# Map_SDK_Framework/Carthage/Build
+*/Carthage/Build
+
+
+# fastlane
+
+#
+
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+
+# screenshots whenever they are needed.
+
+# For more information about the recommended setup visit:
+
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+
+
+
+fastlane/report.xml
+
+fastlane/Preview.html
+
+fastlane/screenshots
+
+fastlane/test_output
