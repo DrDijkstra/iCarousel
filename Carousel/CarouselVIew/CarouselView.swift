@@ -14,6 +14,8 @@ protocol CarouseCollectionViewDelegate: AnyObject {
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath])
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     
+    
+    
 }
 
 
