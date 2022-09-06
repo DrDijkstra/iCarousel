@@ -10,11 +10,6 @@ import UIKit
 class ViewController: UIViewController {
     
     
-//    @IBOutlet var carouselView: CarouselView!
-//
-//
-
-
     @IBOutlet weak var carouselView: CarouselView!
     
     
