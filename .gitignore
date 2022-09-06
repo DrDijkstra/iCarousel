@@ -68,6 +68,7 @@ xcuserdata/
 ## DS_Store
 .DS_Store
 */.DS_Store
+*.xcuserstate
 
 
 ## Other
