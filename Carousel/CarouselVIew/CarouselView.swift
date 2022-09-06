@@ -9,13 +9,16 @@ import UIKit
 
 
 protocol CarouseCollectionViewDelegate: AnyObject {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath])
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
-    
-    
-    
+    func carouselView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    func carouselView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    func carouselView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath])
+    func carouselView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+}
+
+extension CarouseCollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        
+    }
 }
 
 
@@ -27,19 +30,19 @@ class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          
-         return delegate?.collectionView(collectionView, numberOfItemsInSection: section) ?? 0
+         return delegate?.carouselView(collectionView, numberOfItemsInSection: section) ?? 0
     }
     
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        return delegate?.collectionView(collectionView, cellForItemAt: indexPath) ?? UICollectionViewCell()
+        return delegate?.carouselView(collectionView, cellForItemAt: indexPath) ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
         
-        delegate?.collectionView(collectionView, prefetchItemsAt: indexPaths)
+        delegate?.carouselView(collectionView, prefetchItemsAt: indexPaths)
         
     }
     
@@ -81,7 +84,6 @@ class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         collectionView.register(UINib(nibName: "CaroucelCollectionCell", bundle: nil), forCellWithReuseIdentifier: "CaroucelCollectionCell")
         collectionView.delegate = self
         collectionView.dataSource = self
-        //collectionView.reloadData()
     }
     
 
