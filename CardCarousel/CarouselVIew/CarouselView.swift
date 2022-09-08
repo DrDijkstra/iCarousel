@@ -80,7 +80,6 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
         if let urlString = Bundle.main.path(forResource: "CardCarousel", ofType: "framework", inDirectory: "Frameworks") {
                     let bundle = (Bundle(url: NSURL(fileURLWithPath: urlString) as URL))
                     let nib = UINib(nibName: "CarouselView", bundle: bundle)
-            print("myNib \(bundle?.bundleURL) \(nib)")
             guard let xibView = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
                     fatalError("Failed to instantiate nib \(nib)")
                 }
@@ -92,7 +91,9 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
             
             
             
-                }
+        }
+        
+        
 
         
  
