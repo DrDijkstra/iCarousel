@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import CardCarousel
+
 
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var carouselView: CarouselView!
+    @IBOutlet weak var carouselHolderView: UIView!
     
+    var carouselView:CarouselView?
     
     var strArr:[String] = ["asd", "asd", "asdds", "sd", "sd", "asdf", "asdf", "sad"]
     var color:[UIColor] = [.blue, .brown, .cyan, .darkGray, .green, .red, .purple, .magenta]
@@ -19,7 +22,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        carouselView.delegate = self
+        
+        carouselView = CarouselView(frame: carouselHolderView.frame)
+        carouselView?.delegate = self
+        carouselView?.collectionView.register(UINib(nibName: "CaroucelCollectionCell", bundle: nil), forCellWithReuseIdentifier: "CaroucelCollectionCell")
+        
+        carouselHolderView.addSubview(carouselView ?? UIView())
+        
 
 
     
@@ -28,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        carouselView.collectionView.reloadData()
+        carouselView?.collectionView.reloadData()
     }
 
 

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		926E6D7B28C5A7B600A79A01 /* CaroucelCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926E6D7A28C5A7B600A79A01 /* CaroucelCollectionCell.xib */; };
 		926E6D7D28C5A80D00A79A01 /* CaroucelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E6D7C28C5A80D00A79A01 /* CaroucelCollectionCell.swift */; };
-		926E6D7F28C5B8B100A79A01 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E6D7E28C5B8B100A79A01 /* CarouselView.swift */; };
-		926E6D8128C5B8CF00A79A01 /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926E6D8028C5B8CF00A79A01 /* CarouselView.xib */; };
 		926E6D8328C5EFF500A79A01 /* UIView+LoadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E6D8228C5EFF500A79A01 /* UIView+LoadNib.swift */; };
 		929DB3E528C460C90097576A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DB3E428C460C90097576A /* AppDelegate.swift */; };
 		929DB3E728C460C90097576A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DB3E628C460C90097576A /* SceneDelegate.swift */; };
@@ -19,15 +17,28 @@
 		929DB3EE28C460CA0097576A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929DB3ED28C460CA0097576A /* Assets.xcassets */; };
 		929DB3F128C460CA0097576A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929DB3EF28C460CA0097576A /* LaunchScreen.storyboard */; };
 		929DB40028C463450097576A /* CarouselCustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DB3FF28C463450097576A /* CarouselCustomCellView.swift */; };
-		929DB40228C4647C0097576A /* CarouselCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DB40128C4647C0097576A /* CarouselCollectionViewFlowLayout.swift */; };
 		929DB40728C466650097576A /* CarouselCustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929DB40628C466650097576A /* CarouselCustomCellView.xib */; };
+		92EC5D2228C9BDB5000FAF88 /* CardCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */; };
+		92EC5D2328C9BDB5000FAF88 /* CardCarousel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92EC5D2428C9BDB6000FAF88 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92EC5D2328C9BDB5000FAF88 /* CardCarousel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		926E6D7A28C5A7B600A79A01 /* CaroucelCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaroucelCollectionCell.xib; sourceTree = "<group>"; };
 		926E6D7C28C5A80D00A79A01 /* CaroucelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaroucelCollectionCell.swift; sourceTree = "<group>"; };
-		926E6D7E28C5B8B100A79A01 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
-		926E6D8028C5B8CF00A79A01 /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
 		926E6D8228C5EFF500A79A01 /* UIView+LoadNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LoadNib.swift"; sourceTree = "<group>"; };
 		929DB3E128C460C90097576A /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929DB3E428C460C90097576A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,8 +49,8 @@
 		929DB3F028C460CA0097576A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		929DB3F228C460CA0097576A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929DB3FF28C463450097576A /* CarouselCustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCustomCellView.swift; sourceTree = "<group>"; };
-		929DB40128C4647C0097576A /* CarouselCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		929DB40628C466650097576A /* CarouselCustomCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCustomCellView.xib; sourceTree = "<group>"; };
+		92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CardCarousel.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92EC5D2228C9BDB5000FAF88 /* CardCarousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,7 @@
 		929DB3D828C460C90097576A = {
 			isa = PBXGroup;
 			children = (
+				92EC5D1F28C9BC77000FAF88 /* Frameworks */,
 				929DB3E328C460C90097576A /* Carousel */,
 				929DB3E228C460C90097576A /* Products */,
 			);
@@ -73,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				929DB40528C465E10097576A /* CarouselCustomCell */,
-				929DB3F828C461760097576A /* CarouselVIew */,
 				929DB3E428C460C90097576A /* AppDelegate.swift */,
 				929DB3E628C460C90097576A /* SceneDelegate.swift */,
 				929DB3E828C460C90097576A /* ViewController.swift */,
@@ -84,16 +96,6 @@
 				929DB3F228C460CA0097576A /* Info.plist */,
 			);
 			path = Carousel;
-			sourceTree = "<group>";
-		};
-		929DB3F828C461760097576A /* CarouselVIew */ = {
-			isa = PBXGroup;
-			children = (
-				929DB40128C4647C0097576A /* CarouselCollectionViewFlowLayout.swift */,
-				926E6D7E28C5B8B100A79A01 /* CarouselView.swift */,
-				926E6D8028C5B8CF00A79A01 /* CarouselView.xib */,
-			);
-			path = CarouselVIew;
 			sourceTree = "<group>";
 		};
 		929DB40528C465E10097576A /* CarouselCustomCell */ = {
@@ -107,6 +109,14 @@
 			path = CarouselCustomCell;
 			sourceTree = "<group>";
 		};
+		92EC5D1F28C9BC77000FAF88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +127,7 @@
 				929DB3DD28C460C90097576A /* Sources */,
 				929DB3DE28C460C90097576A /* Frameworks */,
 				929DB3DF28C460C90097576A /* Resources */,
+				92EC5D2428C9BDB6000FAF88 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				929DB3F128C460CA0097576A /* LaunchScreen.storyboard in Resources */,
-				926E6D8128C5B8CF00A79A01 /* CarouselView.xib in Resources */,
 				929DB3EE28C460CA0097576A /* Assets.xcassets in Resources */,
 				929DB40728C466650097576A /* CarouselCustomCellView.xib in Resources */,
 				926E6D7B28C5A7B600A79A01 /* CaroucelCollectionCell.xib in Resources */,
@@ -181,13 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				929DB40228C4647C0097576A /* CarouselCollectionViewFlowLayout.swift in Sources */,
 				926E6D7D28C5A80D00A79A01 /* CaroucelCollectionCell.swift in Sources */,
 				929DB40028C463450097576A /* CarouselCustomCellView.swift in Sources */,
 				929DB3E928C460C90097576A /* ViewController.swift in Sources */,
 				926E6D8328C5EFF500A79A01 /* UIView+LoadNib.swift in Sources */,
 				929DB3E528C460C90097576A /* AppDelegate.swift in Sources */,
-				926E6D7F28C5B8B100A79A01 /* CarouselView.swift in Sources */,
 				929DB3E728C460C90097576A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +344,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2UZAVNXXC5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Carousel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -365,6 +378,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2UZAVNXXC5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Carousel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
