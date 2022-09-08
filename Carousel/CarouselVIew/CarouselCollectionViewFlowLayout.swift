@@ -121,6 +121,7 @@ extension CarouselCollectionViewFlowLayout {
     return CGAffineTransform(scaleX: -rawScale, y: rawScale)
   }
 
+    
    func computeLayoutAttributesForItem(indexPath: IndexPath,
                                        minVisibleIndex: Int,
                                        contentCenterX: CGFloat,
