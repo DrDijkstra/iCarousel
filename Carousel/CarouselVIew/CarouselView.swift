@@ -70,6 +70,8 @@ class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         xibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(xibView)
         initCollectionView()
+        
+        
     }
     
     
@@ -84,6 +86,9 @@ class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         collectionView.register(UINib(nibName: "CaroucelCollectionCell", bundle: nil), forCellWithReuseIdentifier: "CaroucelCollectionCell")
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        collectionView.transform = CGAffineTransform(scaleX:-1,y: 1);
+        
     }
     
 

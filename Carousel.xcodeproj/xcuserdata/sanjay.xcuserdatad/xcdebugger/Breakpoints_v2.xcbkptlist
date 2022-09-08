@@ -30,8 +30,8 @@
             filePath = "Carousel/CarouselCustomCell/CaroucelCollectionCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "init(frame:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "Carousel/CarouselCustomCell/CaroucelCollectionCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "init?(coder:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "Carousel/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "carouselView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "Carousel/CarouselVIew/CarouselView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "initCollectionView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "Carousel/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "carouselView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,17 +238,15 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "computeLayoutAttributesForItem(indexPath:minVisibleIndex:contentCenterX:deltaOffset:percentageDeltaOffset:)"
-            landmarkType = "7">
+            startingLineNumber = "196"
+            endingLineNumber = "196">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8A970C53-97F8-472B-8BFF-4D3AA542A0C3"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
@@ -334,9 +332,9 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "layoutAttributesForItem(at:)"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "shouldInvalidateLayout(forBoundsChange:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -350,9 +348,9 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "shouldInvalidateLayout(forBoundsChange:)"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "computeLayoutAttributesForItem(indexPath:minVisibleIndex:contentCenterX:deltaOffset:percentageDeltaOffset:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -366,25 +364,9 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "scale(at:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B42723CB-134D-43C0-8B97-68C863C04DE4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "transform(atCurrentVisibleIndex:percentageOffset:)"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "computeLayoutAttributesForItem(indexPath:minVisibleIndex:contentCenterX:deltaOffset:percentageDeltaOffset:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -398,9 +380,9 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "transform(atCurrentVisibleIndex:percentageOffset:)"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "computeLayoutAttributesForItem(indexPath:minVisibleIndex:contentCenterX:deltaOffset:percentageDeltaOffset:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -408,14 +390,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0C1F2851-191A-4ED4-B096-F4FF9D9A8EF7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "computeLayoutAttributesForItem(indexPath:minVisibleIndex:contentCenterX:deltaOffset:percentageDeltaOffset:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -430,8 +412,8 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "layoutAttributesForElements(in:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +428,8 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "layoutAttributesForElements(in:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,10 +444,8 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "computeLayoutAttributesForItem(indexPath:minVisibleIndex:contentCenterX:deltaOffset:percentageDeltaOffset:)"
-            landmarkType = "7">
+            startingLineNumber = "200"
+            endingLineNumber = "200">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -478,9 +458,23 @@
             filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "computeLayoutAttributesForItem(indexPath:minVisibleIndex:contentCenterX:deltaOffset:percentageDeltaOffset:)"
+            startingLineNumber = "201"
+            endingLineNumber = "201">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "964F1BC4-648D-4BA4-8D37-BBC2E4142780"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "layoutAttributesForElements(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -18,30 +18,48 @@
                 <rect key="frame" x="0.0" y="0.0" width="357" height="156"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-GX-ak7">
-                        <rect key="frame" x="157.5" y="67.5" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8En-vu-sKo">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="156"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-GX-ak7">
+                                <rect key="frame" x="157.5" y="67.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4e1-GX-ak7" firstAttribute="centerX" secondItem="8En-vu-sKo" secondAttribute="centerX" id="UJ5-Nk-act"/>
+                            <constraint firstItem="4e1-GX-ak7" firstAttribute="centerY" secondItem="8En-vu-sKo" secondAttribute="centerY" id="en3-uP-pni"/>
+                        </constraints>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" systemColor="systemMintColor"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="4e1-GX-ak7" firstAttribute="centerX" secondItem="G1f-Xn-4bC" secondAttribute="centerX" id="Uy6-pj-NJ8"/>
-                    <constraint firstItem="4e1-GX-ak7" firstAttribute="centerY" secondItem="G1f-Xn-4bC" secondAttribute="centerY" id="guW-In-6eL"/>
+                    <constraint firstItem="8En-vu-sKo" firstAttribute="leading" secondItem="G1f-Xn-4bC" secondAttribute="leading" id="53u-fa-0wT"/>
+                    <constraint firstItem="8En-vu-sKo" firstAttribute="top" secondItem="G1f-Xn-4bC" secondAttribute="top" id="MW5-g6-I0r"/>
+                    <constraint firstAttribute="bottom" secondItem="8En-vu-sKo" secondAttribute="bottom" id="eNY-dc-G4V"/>
+                    <constraint firstAttribute="trailing" secondItem="8En-vu-sKo" secondAttribute="trailing" id="r2G-Zy-e08"/>
                 </constraints>
             </collectionViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <size key="customSize" width="357" height="156"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
+                <outlet property="holderView" destination="8En-vu-sKo" id="L0j-pA-a4j"/>
                 <outlet property="textLabel" destination="4e1-GX-ak7" id="i27-Yl-Zs9"/>
             </connections>
             <point key="canvasLocation" x="563" y="-43"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

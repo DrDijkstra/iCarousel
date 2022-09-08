@@ -20,11 +20,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         carouselView.delegate = self
-       
+
 
     
 
       
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        carouselView.collectionView.reloadData()
     }
 
 
@@ -42,8 +46,14 @@ extension ViewController:CarouseCollectionViewDelegate{
     
     func carouselView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = carouselView?.collectionView.dequeueReusableCell(withReuseIdentifier: "CaroucelCollectionCell", for: indexPath) as! CaroucelCollectionCell
-        cell.contentView.backgroundColor = color[indexPath.row]
+        cell.holderView.backgroundColor = color[indexPath.row]
         cell.textLabel.text = strArr[indexPath.row]
+        
+        cell.holderView.makeElevatedView()
+        
+        
+        
+        
         return cell
     }
     

@@ -10,15 +10,25 @@ import UIKit
 class CaroucelCollectionCell: UICollectionViewCell {
     
     
-    @IBOutlet var textLabel: UILabel!
+    @IBOutlet weak var holderView: UIView!
+    @IBOutlet weak var textLabel: UILabel!
     
     override class func awakeFromNib() {
         super.awakeFromNib()
+        //self.holderView.transform = CGAffineTransform(scaleX: -1, y: 1)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
     }
+    
+    
+    
+    
+    
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
