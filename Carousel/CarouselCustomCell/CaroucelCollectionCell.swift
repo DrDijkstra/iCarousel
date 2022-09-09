@@ -10,6 +10,7 @@ import UIKit
 class CaroucelCollectionCell: UICollectionViewCell {
     
     
+
     @IBOutlet weak var holderView: UIView!
     @IBOutlet weak var textLabel: UILabel!
     

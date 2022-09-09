@@ -6,6 +6,20 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		92F0C2E128CAF87C00BFB971 /* CardCarouselXC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 92F0C2E228CAF87C00BFB971 /* Build configuration list for PBXAggregateTarget "CardCarouselXC" */;
+			buildPhases = (
+				92F0C2E528CAF88000BFB971 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CardCarouselXC;
+			productName = CardCarouselXC;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		92EC5CFB28C9B08D000FAF88 /* CardCarousel.docc in Sources */ = {isa = PBXBuildFile; fileRef = 92EC5CFA28C9B08D000FAF88 /* CardCarousel.docc */; };
 		92EC5D0128C9B08D000FAF88 /* CardCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC5CF628C9B08D000FAF88 /* CardCarousel.framework */; };
@@ -39,6 +53,8 @@
 		92EC5D1528C9BAC1000FAF88 /* CarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
 		92EC5D1628C9BAC1000FAF88 /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		92EC5D2628C9C3E8000FAF88 /* UIView+LoadNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LoadNib.swift"; sourceTree = "<group>"; };
+		92F0C2EC28CB0DDA00BFB971 /* CardCarousel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CardCarousel.xcodeproj; sourceTree = SOURCE_ROOT; };
+		92F0C2F028CB0DEC00BFB971 /* CardCarousel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CardCarousel.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +79,7 @@
 		92EC5CEC28C9B08D000FAF88 = {
 			isa = PBXGroup;
 			children = (
+				92F0C2EF28CB0DEC00BFB971 /* xcframework */,
 				92EC5D2528C9C3B5000FAF88 /* Extension */,
 				92EC5D1328C9BAC1000FAF88 /* CarouselVIew */,
 				92EC5CF828C9B08D000FAF88 /* CardCarousel */,
@@ -92,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				92EC5D0528C9B08D000FAF88 /* CardCarouselTests.swift */,
+				92F0C2EC28CB0DDA00BFB971 /* CardCarousel.xcodeproj */,
 			);
 			path = CardCarouselTests;
 			sourceTree = "<group>";
@@ -112,6 +130,19 @@
 				92EC5D2628C9C3E8000FAF88 /* UIView+LoadNib.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		92F0C2ED28CB0DDA00BFB971 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92F0C2EF28CB0DEC00BFB971 /* xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				92F0C2F028CB0DEC00BFB971 /* CardCarousel.xcframework */,
+			);
+			path = xcframework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +210,9 @@
 					92EC5CFF28C9B08D000FAF88 = {
 						CreatedOnToolsVersion = 13.4;
 					};
+					92F0C2E128CAF87C00BFB971 = {
+						CreatedOnToolsVersion = 13.4;
+					};
 				};
 			};
 			buildConfigurationList = 92EC5CF028C9B08D000FAF88 /* Build configuration list for PBXProject "CardCarousel" */;
@@ -192,10 +226,17 @@
 			mainGroup = 92EC5CEC28C9B08D000FAF88;
 			productRefGroup = 92EC5CF728C9B08D000FAF88 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 92F0C2ED28CB0DDA00BFB971 /* Products */;
+					ProjectRef = 92F0C2EC28CB0DDA00BFB971 /* CardCarousel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				92EC5CF528C9B08D000FAF88 /* CardCarousel */,
 				92EC5CFF28C9B08D000FAF88 /* CardCarouselTests */,
+				92F0C2E128CAF87C00BFB971 /* CardCarouselXC */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +259,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92F0C2E528CAF88000BFB971 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nIOS_SCHEME_NAME=\"CardCarousel\"\n#MACOS_SCHEME_NAME=\"YOUR_SCHEME_NAME_FOR_MACOS\"\nFRAMEWORK_NAME=\"CardCarousel\"\nSIMULATOR_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}/${FRAMEWORK_NAME}-iphonesimulator.xcarchive\"\nDEVICE_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}/${FRAMEWORK_NAME}-iphoneos.xcarchive\"\n#MACOS_ARCHIVE_PATH=\"${BUILD_DIR}/${CONFIGURATION}/${FRAMEWORK_NAME}-macos.xcarchive\"\n\nOUTPUT_DIC=\"./xcframework/\"\n# Simulator xcarchieve\nxcodebuild archive \\\n  -scheme ${IOS_SCHEME_NAME} \\\n  -archivePath ${SIMULATOR_ARCHIVE_PATH} \\\n  -sdk iphonesimulator \\\n  SKIP_INSTALL=NO\n\n# Device xcarchieve\nxcodebuild archive \\\n  -scheme ${IOS_SCHEME_NAME} \\\n  -archivePath ${DEVICE_ARCHIVE_PATH} \\\n  -sdk iphoneos \\\n  SKIP_INSTALL=NO\n\n# MacOS xcarchieve\n#xcodebuild archive \\\n  -scheme ${MACOS_SCHEME_NAME} \\\n  -archivePath ${MACOS_ARCHIVE_PATH} \\\n  SKIP_INSTALL=NO\n\n# Clean up old output directory\nrm -rf \"${OUTPUT_DIC}\"\n\n# Create xcframwork combine of all frameworks\nxcodebuild -create-xcframework \\\n  -framework ${SIMULATOR_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework \\\n  -framework ${DEVICE_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework \\\n  -output ${OUTPUT_DIC}/${FRAMEWORK_NAME}.xcframework\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92EC5CF228C9B08D000FAF88 /* Sources */ = {
@@ -376,6 +437,8 @@
 		92EC5D0B28C9B08D000FAF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -405,6 +468,8 @@
 		92EC5D0C28C9B08D000FAF88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -465,6 +530,24 @@
 			};
 			name = Release;
 		};
+		92F0C2E328CAF87C00BFB971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UZAVNXXC5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92F0C2E428CAF87C00BFB971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UZAVNXXC5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -491,6 +574,15 @@
 			buildConfigurations = (
 				92EC5D0E28C9B08D000FAF88 /* Debug */,
 				92EC5D0F28C9B08D000FAF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F0C2E228CAF87C00BFB971 /* Build configuration list for PBXAggregateTarget "CardCarouselXC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F0C2E328CAF87C00BFB971 /* Debug */,
+				92F0C2E428CAF87C00BFB971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

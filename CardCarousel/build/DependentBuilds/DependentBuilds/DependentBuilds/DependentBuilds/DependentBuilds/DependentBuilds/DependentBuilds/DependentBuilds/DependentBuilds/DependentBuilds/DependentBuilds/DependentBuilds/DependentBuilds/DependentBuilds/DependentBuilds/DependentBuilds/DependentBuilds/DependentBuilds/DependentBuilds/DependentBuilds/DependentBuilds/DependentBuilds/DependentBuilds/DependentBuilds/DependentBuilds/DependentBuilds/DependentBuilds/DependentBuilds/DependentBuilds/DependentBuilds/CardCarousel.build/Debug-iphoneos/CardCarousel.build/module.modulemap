@@ -1,0 +1,4 @@
+framework module CardCarousel {
+  header "CardCarousel-Swift.h"
+  requires objc
+}

@@ -16,10 +16,8 @@
 		929DB3EC28C460C90097576A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929DB3EA28C460C90097576A /* Main.storyboard */; };
 		929DB3EE28C460CA0097576A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929DB3ED28C460CA0097576A /* Assets.xcassets */; };
 		929DB3F128C460CA0097576A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929DB3EF28C460CA0097576A /* LaunchScreen.storyboard */; };
-		929DB40028C463450097576A /* CarouselCustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DB3FF28C463450097576A /* CarouselCustomCellView.swift */; };
-		929DB40728C466650097576A /* CarouselCustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929DB40628C466650097576A /* CarouselCustomCellView.xib */; };
-		92EC5D2228C9BDB5000FAF88 /* CardCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */; };
-		92EC5D2328C9BDB5000FAF88 /* CardCarousel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F0C2F528CB0E3A00BFB971 /* CardCarousel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F0C2F328CB0E2A00BFB971 /* CardCarousel.xcframework */; };
+		92F0C2F628CB0E3A00BFB971 /* CardCarousel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92F0C2F328CB0E2A00BFB971 /* CardCarousel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				92EC5D2328C9BDB5000FAF88 /* CardCarousel.framework in Embed Frameworks */,
+				92F0C2F628CB0E3A00BFB971 /* CardCarousel.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,9 +46,7 @@
 		929DB3ED28C460CA0097576A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929DB3F028C460CA0097576A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		929DB3F228C460CA0097576A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		929DB3FF28C463450097576A /* CarouselCustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCustomCellView.swift; sourceTree = "<group>"; };
-		929DB40628C466650097576A /* CarouselCustomCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCustomCellView.xib; sourceTree = "<group>"; };
-		92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CardCarousel.framework; sourceTree = "<group>"; };
+		92F0C2F328CB0E2A00BFB971 /* CardCarousel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CardCarousel.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92EC5D2228C9BDB5000FAF88 /* CardCarousel.framework in Frameworks */,
+				92F0C2F528CB0E3A00BFB971 /* CardCarousel.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +64,7 @@
 		929DB3D828C460C90097576A = {
 			isa = PBXGroup;
 			children = (
-				92EC5D1F28C9BC77000FAF88 /* Frameworks */,
+				92F0C2F228CB0E2A00BFB971 /* xcframework */,
 				929DB3E328C460C90097576A /* Carousel */,
 				929DB3E228C460C90097576A /* Products */,
 			);
@@ -101,20 +97,19 @@
 		929DB40528C465E10097576A /* CarouselCustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				929DB40628C466650097576A /* CarouselCustomCellView.xib */,
-				929DB3FF28C463450097576A /* CarouselCustomCellView.swift */,
 				926E6D7A28C5A7B600A79A01 /* CaroucelCollectionCell.xib */,
 				926E6D7C28C5A80D00A79A01 /* CaroucelCollectionCell.swift */,
 			);
 			path = CarouselCustomCell;
 			sourceTree = "<group>";
 		};
-		92EC5D1F28C9BC77000FAF88 /* Frameworks */ = {
+		92F0C2F228CB0E2A00BFB971 /* xcframework */ = {
 			isa = PBXGroup;
 			children = (
-				92EC5D2028C9BC83000FAF88 /* CardCarousel.framework */,
+				92F0C2F328CB0E2A00BFB971 /* CardCarousel.xcframework */,
 			);
-			path = Frameworks;
+			name = xcframework;
+			path = CardCarousel/xcframework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +173,6 @@
 			files = (
 				929DB3F128C460CA0097576A /* LaunchScreen.storyboard in Resources */,
 				929DB3EE28C460CA0097576A /* Assets.xcassets in Resources */,
-				929DB40728C466650097576A /* CarouselCustomCellView.xib in Resources */,
 				926E6D7B28C5A7B600A79A01 /* CaroucelCollectionCell.xib in Resources */,
 				929DB3EC28C460C90097576A /* Main.storyboard in Resources */,
 			);
@@ -192,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				926E6D7D28C5A80D00A79A01 /* CaroucelCollectionCell.swift in Sources */,
-				929DB40028C463450097576A /* CarouselCustomCellView.swift in Sources */,
 				929DB3E928C460C90097576A /* ViewController.swift in Sources */,
 				926E6D8328C5EFF500A79A01 /* UIView+LoadNib.swift in Sources */,
 				929DB3E528C460C90097576A /* AppDelegate.swift in Sources */,

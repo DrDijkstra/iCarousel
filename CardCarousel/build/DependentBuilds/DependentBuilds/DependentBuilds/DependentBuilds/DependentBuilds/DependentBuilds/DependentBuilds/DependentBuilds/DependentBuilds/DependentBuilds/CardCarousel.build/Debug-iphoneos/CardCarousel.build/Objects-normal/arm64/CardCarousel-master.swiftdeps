@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "0f5030e919c65c5849044a5d26e830f4f0b65cedf691bf8d145c9b100efe349f"
+build_start_time: [1662697513, 427825927]
+build_end_time: [1662697513, 635456085]
+inputs:
+  "/Users/sanjay/Desktop/iCarousel/CardCarousel/CarouselVIew/CarouselCollectionViewFlowLayout.swift": [1662653786, 640888214]
+  "/Users/sanjay/Desktop/iCarousel/CardCarousel/CarouselVIew/CarouselView.swift": [1662653786, 641106605]
+  "/Users/sanjay/Desktop/iCarousel/CardCarousel/Extension/UIView+LoadNib.swift": [1662653786, 641511201]

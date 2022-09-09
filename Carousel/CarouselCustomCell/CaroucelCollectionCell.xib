@@ -51,8 +51,8 @@
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="holderView" destination="8En-vu-sKo" id="L0j-pA-a4j"/>
-                <outlet property="textLabel" destination="4e1-GX-ak7" id="i27-Yl-Zs9"/>
+                <outlet property="holderView" destination="8En-vu-sKo" id="Nyh-ph-0bm"/>
+                <outlet property="textLabel" destination="4e1-GX-ak7" id="D8L-Je-7Hc"/>
             </connections>
             <point key="canvasLocation" x="563" y="-43"/>
         </collectionViewCell>
