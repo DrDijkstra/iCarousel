@@ -57,7 +57,7 @@ open class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
     let minVisibleIndex = max(Int(collectionView.contentOffset.x) / Int(collectionView.bounds.width), 0)
     let maxVisibleIndex = min(minVisibleIndex + maximumVisibleItems + 1 , totalItemsCount)
     
-    print("minVisibleIndex", minVisibleIndex, "maxVisibleIndex", maxVisibleIndex)
+    //print("minVisibleIndex", minVisibleIndex, "maxVisibleIndex", maxVisibleIndex)
 
     let contentCenterX = collectionView.contentOffset.x + (collectionView.bounds.width / 2.0)
 
@@ -144,7 +144,7 @@ extension CarouselCollectionViewFlowLayout {
        
        
 
-    print("print", minVisibleIndex, maximumVisibleItems)
+    //print("print", minVisibleIndex, maximumVisibleItems)
     currenCellIndex = minVisibleIndex
     
        

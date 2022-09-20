@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Foundation
 
 public protocol CarouseCollectionViewDelegate: AnyObject {
     func carouselView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -27,6 +27,64 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.collectionView(collectionView, didSelectItemAt: indexPath)
     }
+    
+    public func scrollToNextCell(){
+        
+
+            //get cell size
+        
+        
+        let cellSize =  CGSize(width: UIScreen.main.bounds.width, height: self.frame.height);
+
+            //get current content Offset of the Collection view
+        let contentOffset = collectionView.contentOffset;
+        
+        
+        print("cell size", cellSize)
+        
+
+        let flowlayout = (collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout)
+        
+        
+        //flowlayout.currenCellIndex += 1
+
+        
+        
+        //print("next item", nextItem, "current cell", flowlayout.currenCellIndex)
+
+        print("currentIndex", getCurrentIndex())
+        
+        
+        collectionView.scrollRectToVisible(CGRect(x: CGFloat((getCurrentIndex()) + 1) * (cellSize.width + 24.0), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: true);
+
+
+
+        }
+    
+    
+    public func goToCellat(Index: Int){
+        
+        //let collectionView:UICollectionView = (carouselView?.collectionView)!;
+
+            //get cell size
+        let cellSize = CGSize(width: UIScreen.main.bounds.width, height: self.frame.height);
+
+            //get current content Offset of the Collection view
+        let contentOffset = collectionView.contentOffset;
+        
+       
+        
+        //print("cell size", cellSize, "contentOffset", contentOffset)
+
+            //scroll to next cell
+        //collectionView.isPagingEnabled = false
+         
+        //nextItem = strArr.count * 3000
+        
+        collectionView.scrollRectToVisible(CGRect(x: CGFloat(Index) * (cellSize.width + 24.0), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: false);
+        
+    }
+
     
 
     
