@@ -196,6 +196,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
+@import Foundation;
 @import UIKit;
 #endif
 
@@ -215,9 +216,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UICollectionView;
+@class UICollectionViewLayoutAttributes;
 @class NSIndexPath;
-@class UICollectionViewCell;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC12CardCarousel32CarouselCollectionViewFlowLayout")
+@interface CarouselCollectionViewFlowLayout : UICollectionViewLayout
+@property (nonatomic, readonly, strong) UICollectionView * _Nonnull collectionView;
+@property (nonatomic, readonly) CGSize collectionViewContentSize;
+- (void)prepareLayout;
+- (NSArray<UICollectionViewLayoutAttributes *> * _Nullable)layoutAttributesForElementsInRect:(CGRect)rect SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewLayoutAttributes * _Nullable)layoutAttributesForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class UICollectionViewCell;
 
 SWIFT_CLASS("_TtC12CardCarousel12CarouselView")
 @interface CarouselView : UIView <UICollectionViewDataSource, UICollectionViewDelegate>

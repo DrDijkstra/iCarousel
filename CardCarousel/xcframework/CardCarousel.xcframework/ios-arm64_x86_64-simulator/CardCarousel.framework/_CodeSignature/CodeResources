@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/CardCarousel-Swift.h</key>
 		<data>
-		XIJusUvyKWwCkfqXThmivtdqKVA=
+		8fW/z+OS1dIRU0/DXwM4kar7pMI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/CardCarousel.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6ENtuThqAIc565NaZFSv/U5YxK0=
+		yXXgODnlPqtJ65WLooqdBSTnPeA=
 		</data>
 		<key>Modules/CardCarousel.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jmI5kl0xa5madYyeL+b5/fgHX7I=
+		nq2Vf5wh8mHmFyyenGImgdsKNKE=
 		</data>
 		<key>Modules/CardCarousel.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/CardCarousel.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UMVxBu5bt139Buh7aOG2cq5Yovg=
+		d84yn2FyUcAtWB1+yDDYFGs9dAk=
 		</data>
 		<key>Modules/CardCarousel.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xMC3QTm5hnSweUupAdxZtkPTaxk=
+		K9VuaZxql98KSP4NDCSJF2DEo6Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7xImjp1ihgP8jRItPvl7gt2jDrnEHbReHnfNBDBOaWg=
+			Gg039ZYaehprjurjzbNAliBBVA008fwTACSbWJL0NDs=
 			</data>
 		</dict>
 		<key>Modules/CardCarousel.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VJHpcbQ7pMom5kS8Ftbv4hSY2Dg/6Aeo/rYN6yeRODY=
+			wUCv0XACiBJdVsbziHX2IgEGxis6C/zrV8AL7q3H9Aw=
 			</data>
 		</dict>
 		<key>Modules/CardCarousel.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CtgL7Gt2Qkb2YudWfsG9lan3/OamHDTCkycj+G6rS1E=
+			gqeaq2AsRsjF2+svYFnK0sc7JKl3XkzReSHwCkSiiE0=
 			</data>
 		</dict>
 		<key>Modules/CardCarousel.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q3F2ErOjXIYORPKc6TvYILUsL1lDiW8flnD41FQxHF4=
+			Py7J3solPx4w/BJELZwYCuchVhaYISugZecKPN4bgIM=
 			</data>
 		</dict>
 		<key>Modules/CardCarousel.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oodrMrJbOAf4rVCJY13F5uv21vuxjKyyBwnejmD0UFo=
+			lsHXCb8qBMuZvmUunGqG1XGWpjH1Xqouj1/ZboyWCo4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

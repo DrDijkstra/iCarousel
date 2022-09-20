@@ -8,7 +8,7 @@
 import UIKit
 
 
-class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
+open class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
 
   
   public var itemSize: CGSize = CGSize(width: 250, height: 140) {
@@ -28,6 +28,12 @@ class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
       invalidateLayout()
     }
   }
+    
+ public var currenCellIndex: Int = 0 {
+      didSet{
+        //invalidateLayout()
+      }
+    }
     
     
   override open var collectionView: UICollectionView {
@@ -49,7 +55,9 @@ class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
     let totalItemsCount = collectionView.numberOfItems(inSection: 0)
 
     let minVisibleIndex = max(Int(collectionView.contentOffset.x) / Int(collectionView.bounds.width), 0)
-    let maxVisibleIndex = min(minVisibleIndex + maximumVisibleItems, totalItemsCount)
+    let maxVisibleIndex = min(minVisibleIndex + maximumVisibleItems + 1 , totalItemsCount)
+    
+    print("minVisibleIndex", minVisibleIndex, "maxVisibleIndex", maxVisibleIndex)
 
     let contentCenterX = collectionView.contentOffset.x + (collectionView.bounds.width / 2.0)
 
@@ -60,7 +68,7 @@ class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
     let visibleIndices = stride(from: minVisibleIndex, to: maxVisibleIndex, by: 1)
       
       
-      print("layoutAttributesForElements", visibleIndices)
+      //print("layoutAttributesForElements", visibleIndices)
 
     let attributes: [UICollectionViewLayoutAttributes] = visibleIndices.map
         { index in
@@ -80,22 +88,28 @@ class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
 
     return attributes
   }
+    
+ 
+    
+    
 
   override open func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
     let contentCenterX = collectionView.contentOffset.x + (collectionView.bounds.width / 2.0)
     let minVisibleIndex = Int(collectionView.contentOffset.x) / Int(collectionView.bounds.width)
     let deltaOffset = Int(collectionView.contentOffset.x) % Int(collectionView.bounds.width)
     let percentageDeltaOffset = CGFloat(deltaOffset) / collectionView.bounds.width
+    //currenCellIndex = minVisibleIndex
       
-      
-    print("layoutAttributesForItem", minVisibleIndex)
+    //print("layoutAttributesForItem", minVisibleIndex)
     return computeLayoutAttributesForItem(indexPath: indexPath,
                                    minVisibleIndex: minVisibleIndex,
                                    contentCenterX: contentCenterX,
                                    deltaOffset: CGFloat(deltaOffset),
                                    percentageDeltaOffset: percentageDeltaOffset)
   }
-
+  
+  
+    
   override open func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
     return true
   }
@@ -128,6 +142,12 @@ extension CarouselCollectionViewFlowLayout {
                                        deltaOffset: CGFloat,
                                        percentageDeltaOffset: CGFloat) -> UICollectionViewLayoutAttributes {
        
+       
+
+    print("print", minVisibleIndex, maximumVisibleItems)
+    currenCellIndex = minVisibleIndex
+    
+       
     let attributes = UICollectionViewLayoutAttributes(forCellWith:indexPath)
     let visibleIndex = indexPath.row - minVisibleIndex
     attributes.size = itemSize
@@ -137,7 +157,7 @@ extension CarouselCollectionViewFlowLayout {
     attributes.zIndex = maximumVisibleItems - visibleIndex
        
        
-    print("index", visibleIndex)
+    //print("index", visibleIndex)
 
     attributes.transform = transform(atCurrentVisibleIndex: visibleIndex, percentageOffset: percentageDeltaOffset)
     switch visibleIndex {

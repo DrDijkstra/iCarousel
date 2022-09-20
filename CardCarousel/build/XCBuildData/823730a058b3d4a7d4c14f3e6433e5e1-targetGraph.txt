@@ -1,0 +1,6 @@
+Target dependency graph (4 targets)
+CardCarousel in CardCarousel, no dependencies
+CardCarousel in CardCarousel, no dependencies
+CardCarouselTests in CardCarousel, depends on:
+CardCarousel in CardCarousel (explicit)
+CardCarouselXC in CardCarousel, no dependencies

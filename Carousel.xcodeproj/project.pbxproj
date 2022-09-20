@@ -339,8 +339,7 @@
 				DEVELOPMENT_TEAM = 2UZAVNXXC5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/CardCarousel/xcframework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Carousel/Info.plist;
@@ -373,8 +372,7 @@
 				DEVELOPMENT_TEAM = 2UZAVNXXC5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/CardCarousel/xcframework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Carousel/Info.plist;

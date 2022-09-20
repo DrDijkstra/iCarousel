@@ -28,6 +28,28 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
         delegate?.collectionView(collectionView, didSelectItemAt: indexPath)
     }
     
+
+    
+    
+    public func getCurrentIndex()->Int{
+        var minIndex = Int.max
+        
+        for cell in collectionView.visibleCells {
+            let indexPath = collectionView.indexPath(for: cell)
+            
+            if minIndex > indexPath!.row{
+                minIndex = indexPath!.row
+            }
+        }
+        
+        return minIndex
+    }
+    
+    
+    
+    
+    
+    
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          
          return delegate?.carouselView(collectionView, numberOfItemsInSection: section) ?? 0
@@ -102,6 +124,8 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
         
         
     }
+    
+    
     
     
 
