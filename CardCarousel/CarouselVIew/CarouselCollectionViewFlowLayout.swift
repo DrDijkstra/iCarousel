@@ -17,7 +17,7 @@ open class CarouselCollectionViewFlowLayout: UICollectionViewLayout {
     }
   }
 
-  public var spacing: CGFloat = -20.0 {
+  public var spacing: CGFloat = -10.0 {
     didSet{
       invalidateLayout()
     }
@@ -132,7 +132,7 @@ extension CarouselCollectionViewFlowLayout {
       let delta = (previousScale - rawScale) * percentageOffset
       rawScale += delta
     }
-    return CGAffineTransform(scaleX: -rawScale, y: rawScale)
+      return CGAffineTransform(scaleX: -rawScale, y: rawScale)
   }
 
     

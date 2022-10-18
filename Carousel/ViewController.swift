@@ -63,13 +63,12 @@ extension ViewController:CarouseCollectionViewDelegate{
     }
     
     func carouselView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Int.max
+        return 8000000
     }
     
     func carouselView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = carouselView?.collectionView.dequeueReusableCell(withReuseIdentifier: "CaroucelCollectionCell", for: indexPath) as! CaroucelCollectionCell
         cell.holderView.backgroundColor = color[indexPath.row % strArr.count]
-        cell.textLabel.text = strArr[indexPath.row % strArr.count]
         cell.holderView.makeElevatedView()
         return cell
     }

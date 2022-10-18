@@ -28,61 +28,52 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
         delegate?.collectionView(collectionView, didSelectItemAt: indexPath)
     }
     
+    
+   
+    
     public func scrollToNextCell(){
-        
-
-            //get cell size
-        
-        
-        let cellSize =  CGSize(width: UIScreen.main.bounds.width, height: self.frame.height);
-
-            //get current content Offset of the Collection view
+        let cellSize = CGSize(width: UIScreen.main.bounds.width, height: (self.collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout).itemSize.height)
         let contentOffset = collectionView.contentOffset;
         
         
-        print("cell size", cellSize)
+        print("getCurrentIndex \(getCurrentIndex())   \(cellSize)")
         
-
-        let flowlayout = (collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout)
-        
-        
-        //flowlayout.currenCellIndex += 1
-
-        
-        
-        //print("next item", nextItem, "current cell", flowlayout.currenCellIndex)
-
-        print("currentIndex", getCurrentIndex())
-        
-        
-        collectionView.scrollRectToVisible(CGRect(x: CGFloat((getCurrentIndex()) + 1) * (cellSize.width + 24.0), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: true);
+        collectionView.scrollRectToVisible(CGRect(x: CGFloat((getCurrentIndex()) + 1) * (cellSize.width  ), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: false);
 
 
 
         }
     
+     var itemSize:CGSize?
     
-    public func goToCellat(Index: Int){
+    
+     var maxVisibleItems:Int?
+   
+    
+    
+    public func goToCellat(Index: Int, animated: Bool){
         
-        //let collectionView:UICollectionView = (carouselView?.collectionView)!;
+ 
+        let cellSize = CGSize(width: UIScreen.main.bounds.width, height: (self.collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout).itemSize.height)
 
-            //get cell size
-        let cellSize = CGSize(width: UIScreen.main.bounds.width, height: self.frame.height);
-
-            //get current content Offset of the Collection view
         let contentOffset = collectionView.contentOffset;
         
-       
         
-        //print("cell size", cellSize, "contentOffset", contentOffset)
-
-            //scroll to next cell
-        //collectionView.isPagingEnabled = false
-         
-        //nextItem = strArr.count * 3000
+        collectionView.scrollRectToVisible(CGRect(x: CGFloat(Index) * (cellSize.width), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: animated);
         
-        collectionView.scrollRectToVisible(CGRect(x: CGFloat(Index) * (cellSize.width + 24.0), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: false);
-        
+    }
+    
+    public func registerNib(uiNib: UINib,reusableIdentifier:String ){
+ 
+        collectionView.register(uiNib, forCellWithReuseIdentifier: reusableIdentifier)
+    }
+    
+    public func setItemSize(itemSize:CGSize ){
+        (collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout).itemSize = itemSize
+    }
+    
+    public func setMaxVisibleItem(No:Int ){
+        (collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout).maximumVisibleItems = No
     }
 
     
@@ -147,6 +138,7 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
     public override init(frame: CGRect) {
         super.init(frame: frame)
         configureView()
+        
     }
     
     
@@ -186,6 +178,7 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
     
     
     
+    
 
     
 
@@ -195,8 +188,18 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
     
     func initCollectionView(){
         
+        
+       
+        (collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout).maximumVisibleItems = maxVisibleItems ?? 1
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        
+        
+//        collectionView.collectionViewLayout = layout
+        
+        //collectionView.collectionViewLayout = layout
         
         collectionView.transform = CGAffineTransform(scaleX:-1,y: 1);
         
