@@ -31,14 +31,14 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
     
    
     
-    public func scrollToNextCell(){
+    public func scrollToNextCell(animated:Bool){
         let cellSize = CGSize(width: UIScreen.main.bounds.width, height: (self.collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout).itemSize.height)
         let contentOffset = collectionView.contentOffset;
         
         
-        print("getCurrentIndex \(getCurrentIndex())   \(cellSize)")
+        print(CGFloat((getCurrentIndex()) + 1) * (cellSize.width  ))
         
-        collectionView.scrollRectToVisible(CGRect(x: CGFloat((getCurrentIndex()) + 1) * (cellSize.width  ), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: false);
+        collectionView.scrollRectToVisible(CGRect(x: CGFloat((getCurrentIndex()) + 1) * (collectionView.frame.width ), y: contentOffset.y, width:  UIScreen.main.bounds.width, height: cellSize.height), animated: animated);
 
 
 
@@ -59,7 +59,7 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
         let contentOffset = collectionView.contentOffset;
         
         
-        collectionView.scrollRectToVisible(CGRect(x: CGFloat(Index) * (cellSize.width), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: animated);
+        collectionView.scrollRectToVisible(CGRect(x: CGFloat(Index) * (collectionView.frame.width), y: contentOffset.y, width: cellSize.width, height: cellSize.height), animated: animated);
         
     }
     
@@ -79,6 +79,22 @@ open class CarouselView: UIView, UICollectionViewDataSource, UICollectionViewDel
     
 
     
+    
+//    public func getCurrentIndexV2()->Int{
+//        var indexes:[Int] = []
+//        for cell in collectionView.visibleCells {
+//            let indexPath = collectionView.indexPath(for: cell)
+//            indexes.append(indexPath!.row)
+//        }
+//
+//        indexes.sort()
+//        if indexes.count > (collectionView.collectionViewLayout as! CarouselCollectionViewFlowLayout).maximumVisibleItems{
+//            indexes = indexes.suffix(5)
+//        }
+//
+//
+//        return indexes[0]
+//    }
     
     public func getCurrentIndex()->Int{
         var minIndex = Int.max
